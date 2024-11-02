@@ -13,8 +13,8 @@ TARGET = main
 all: $(TARGET)
 
 # Build target
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $(TARGET) main.c -lm
+$(TARGET): main.c matrix.c matrix.h
+	$(CC) $(CFLAGS) -o $(TARGET) main.c matrix.c -lm
 
 # Clean target
 clean:
